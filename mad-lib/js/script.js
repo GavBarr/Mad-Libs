@@ -1,0 +1,34 @@
+
+
+const madLibsInput = document.getElementById('madlibs-form');
+const storyTime = document.getElementById('completed-story');
+
+const submitMadLibs = (event) => {
+
+    event.preventDefault();
+    madLibsInput.classList.add('done');
+
+    const form = new FormData(event.target);
+    const userSubmission = Object.fromEntries(form);
+
+    const story = `
+        <h3>The Raven by Edgar Allen Poe Madlib Edition</h3>
+        <p>Deep into that <span class="inserted-text">${userSubmission.adj1}</span> <span class="inserted-text">${userSubmission.adverb1}</span>, long <span class="inserted-text">${userSubmission.pronoun1}</span> stood there wondering, <span class="inserted-text">${userSubmission.verb1}</span>, <span class="inserted-text">${userSubmission.adverb2}</span>,<span class="inserted-text">${userSubmission.verb2}</span>, dreams no <span class="inserted-text"> ${userSubmission.noun1}</span> ever dared to dream <span class="inserted-text">${userSubmission.interjection2}</span>! But the silence was unbroken, <span class="inserted-text">${userSubmission.conjuction1}</span> the stillness gave <span class="inserted-text">${userSubmission.preposition2}</span> <span class="inserted-text">${userSubmission.noun2}</span>, and the only word there <span class="inserted-text">${userSubmission.verb3}</span> was the whispered <span class="inserted-text">${userSubmission.preposition1}</span>,"<span class="inserted-text">${userSubmission.noun3} </span>!". This <span class="inserted-text">${userSubmission.pronoun2}</span> whispered, <span class="inserted-text">${userSubmission.conjunction2}</span> echo murmured back the word, "<span class="inserted-text">${userSubmission.interjection1}</span>". Merely this and <span class="inserted-text">${userSubmission.adj2} more.</p>
+
+    `;
+
+    storyTime.innerHTML += story;
+    storyTime.classList.remove('done');
+
+    let resetButton = `
+        <button id="madlibs-reset" onclick="resetMadLibs()">Another Madlib?</button>
+    `;
+    storyTime.innerHTML += resetButton;
+}
+
+const resetMadLibs = () => {
+    storyTime.classList.add('done');
+    storyTime.innerHTML = '';
+    madLibsInput.reset();
+    madLibsInput.classList.remove('done');
+}

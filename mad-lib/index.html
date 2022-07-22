@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mad Libs</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="everything">
+        <header id="header" class="mid">
+            <h1 >Welcome to Madlibs!</h1>
+        </header>
+
+        <main>
+
+            <form id="madlibs-form" name="madlibs-form" onsubmit="submitMadLibs(event)">
+                <section id="madlibs-inputs">
+										<div class="input">
+                        <label for="noun1"> Noun #1</label>
+                        <input type="text" id="noun1" name="noun1" required>
+                    </div>
+                    
+                    <div class="input">
+                        <label for="noun2"> Noun #2</label>
+                        <input type="text" id="noun2" name="noun2" required>
+                    </div>
+
+										
+										<div class="input">
+                        <label for="noun3"> Noun #3</label>
+                        <input type="text" id="noun3" name="noun3" required>
+                    </div>
+        
+                    <div class="input">
+                        <label for="adj1"> Adjective #1</label>
+                        <input type="text" id="adj1" name="adj1" required>
+                    </div>
+        
+                    <div class="input">
+                        <label for="adj2"> Adjective #2</label>
+												<input type="text" id="adj2" name="adj2" required>
+												
+										</div>
+
+                    <div class="input">
+                        <label for="verb1"> Verb #1</label>
+                        <input type="text" id="verb1" name="verb1" required>
+                    </div>
+        
+                    <div class="input">
+                        <label for="verb2"> Verb #2</label>
+                        <input type="text" id="verb2" name="verb2" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="verb3"> Verb #3</label>
+                        <input type="text" id="verb3" name="verb3" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="adverb1"> Adverb #1</label>
+                        <input type="text" id="adverb1" name="adverb1" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="adverb2"> Adverb #2</label>
+                        <input type="text" id="adverb2" name="adverb2" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="pronoun1"> Pronoun #1</label>
+                        <input type="text" id="pronoun1" name="pronoun1" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="pronoun2"> Pronoun #2</label>
+                        <input type="text" id="pronoun2" name="pronoun2" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="preposition1"> Preposition #1</label>
+                        <input type="text" id="preposition1" name="preposition1" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="preposition2"> Preposition #2</label>
+                        <input type="text" id="preposition2" name="preposition2" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="conjunction1"> Conjunction #1</label>
+                        <input type="text" id="conjunction1" name="conjunction1" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="conjunction2"> Conjunction #2</label>
+                        <input type="text" id="conjunction2" name="conjunction2" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="interjection1"> Interjection #1</label>
+                        <input type="text" id="interjection1" name="interjection1" required>
+                    </div>
+										
+										<div class="input">
+                        <label for="interjection2"> Interjection #2</label>
+                        <input type="text" id="interjection2" name="interjection2" required>
+                    </div>
+
+
+                </section>
+                
+                <section id="madlibs-submit">
+                    <button type="submit">
+                        Generate
+                    </button>
+                </section>
+								
+					
+								
+            </form>
+
+            <section id="completed-story" class="done"></section>
+        </main>
+    </div>
+    
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>

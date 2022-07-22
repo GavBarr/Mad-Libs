@@ -1,0 +1,92 @@
+*{margin: 0; padding: 0;}
+
+.everything{
+    margin: 0 auto;
+    min-width: 60vw;
+    max-width: 50vw;
+		max-height: 80vh;
+    min-height: 30vh;    
+    background-color: rgb(255, 153, 204);
+		top: 20;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    height: 100%;
+    overflow-y: hidden;
+		font-family: 'Poppins', sans-serif;
+    background: rgb(255, 204, 255);
+		align-items: center;
+    display: flex;
+    
+}
+
+
+
+
+.input-group {
+    display: flex;
+		margin: 8px;
+    flex-direction: column;
+   
+}
+
+.input-group label{
+    padding-left: 10px;
+}
+
+.input-group input[type="text"] {
+    height: 20px;
+    width: 175px;
+    border-radius: 22px;
+    padding-left: 15px;
+    margin:  10px;
+}
+
+.center{
+    text-align: center;
+}
+
+form section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+
+#madlibs-submit button, 
+#madlibs-reset {
+    height: 40px;
+    width: 250px;
+    background-color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'tahoma', sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+#completed-story{
+
+    margin-top: 22 px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.inserted-text{
+    border-bottom: 3px;
+    font-weight: 500;
+    background-color: white;
+
+}
+
+
